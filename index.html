@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yummy</title>
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon" />
+    <!-- ! =========== Font Asowme ========== -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- ! =========== Bootsrab ========== -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- ! =========== style ========== -->
+  <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+<!-- ? ================  Start sidebar  ================-->
+<div id="sidebar" class="d-flex  w-25 position-fixed top-0">
+      <div class="contactNav bg-black d-flex flex-column justify-content-between   ">
+        <div id="c" class=" d-flex flex-column  " >
+        <a id="searchanchor" class="p-3 " href="#search">Search</a>
+        <a id="Categoryanchor" class="p-3 " href="#Category">Categories</a>
+        <a id="Areaanchor" class="p-3 " href="#Area">Area</a>
+        <a id="Integrationanchor" class="p-3 " href="#Integration">Ingredients</a>
+        <a id="contactnchor" class="p-3 " href="#contact">Contact Us</a>
+        </div>
+        <div class="social p-3">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-solid fa-globe"></i> 
+          <p>Copyright Â© 2019 All Rights <br>
+            Reserved.</p>
+        </div>
+     </div>
+     <div class="setting bg-white d-flex flex-column justify-content-between align-items-center p-3 ">
+      <img width="50px" src="images/icon.png" alt="">
+      <i id="open" class="fa-solid open-close-icon fa-align-justify fa-2x text-black"></i>
+      <i id="close" class="fa-solid fa-xmark  fa-2x text-black d-none"></i>
+      <span class="d-flex  flex-column ">
+        <i class="fa-solid fa-globe d-block my-1 text-black"></i>
+        <i class="fa-solid fa-share-nodes my-1 text-black"></i>
+      </span>
+    </div>   
+</div>
+<!-- ? ================  End sidebar  ================-->
+
+ِ<!-- ! ================  Start Home   ================-->
+<div  id="home">
+      <div class="container my-5 w-75">
+        <div id="rowData" class="row g-4">
+             
+        </div>
+      </div>
+</div> 
+ِ<!-- ! ================  End Home   ================-->
+
+ِ<!-- ? ================  Start Seach  ================-->
+<div class="d-none"  id="search">
+  <div class="container w-75 m-auto">
+    <div class="row">
+      <div class="col-md-6">
+        <input id="searchhh" class="form-control bg-transparent text-white w-75 ms-auto" type="text" placeholder="Search By Name">
+      </div>
+      <div class="col-md-6">
+        <input maxlength="1" id="Sone" class="form-control bg-transparent text-white w-75 me-auto" type="text" placeholder="Search By First Litter">
+      </div>
+      <div >
+       
+        <div id="DataSearch" class="row">
+
+        </div>
+
+      </div>
+    
+    </div>
+  </div>
+</div>
+ِ<!-- ? ================  End Seach  ================-->
+
+ِ<!-- ! ================  Start Category  ================-->
+<div class="d-none"  id="Category">
+  <div class="container w-75  my-5 m-auto">
+    <div id="CategoryData" class="row g-4">
+          
+    </div>
+  </div>
+</div> 
+
+<div class="d-none"  id="Meals">
+  <div class="container w-75  my-5  m-auto">
+    <div id="MealsDdata" class="row g-4">
+        
+         
+ 
+      
+    </div>
+  </div>
+</div> 
+ِ<!-- ! ================  End Category  ================-->
+
+ِ<!-- ? ================ Start Area  ================-->
+<div class="d-none" id="Area">
+  <div class="container my-5 w-75 m-auto">
+    <div id="AreaData" class="row g-4">
+      
+    </div>
+  </div>
+</div>
+
+<div class="d-none"  id="Area2">
+  <div class="container w-75  my-5 m-auto">
+    <div id="AreaDdata2" class="row g-4">
+        
+       
+ 
+      
+    </div>
+  </div>
+</div> 
+ِ<!-- ? ================ End Area  ================-->
+
+ِ<!-- ! ================ Start Integration  ================-->
+<div  class="d-none" id="Integration">
+  <div class="container my-5 w-75 mx-auto">
+    <div id="IntegrationData" class="row g-4">
+    
+    </div>
+  </div>
+</div>
+
+<div class="d-none"  id="Integration2">
+  <div class="container w-75  my-5 m-auto">
+    <div id="IntegrationData2" class="row g-4">
+        
+       
+ 
+      
+    </div>
+  </div>
+</div> 
+ِ<!-- ! ================ End Integration  ================-->
+
+ِ<!-- ? ================ Start ContactUs  ================-->
+<div class="d-none"   id="contact">
+  <div class="container w-50 m-auto">
+    <h2 class="text-center"> Contact Us </h2>
+    <div class="row g-4  vh-100  justify-content-center align-content-center">
+      <div class="col-md-6">
+        <input id="Name" class="form-control bg-transparent text-white" type="text" placeholder="Enter Your Name">
+        <p id="mName" class="alert alert-danger my-1 d-none ">Special characters and numbers not allowed</p>
+      </div>
+      <div class="col-md-6">
+        <input id="Email" class="form-control bg-transparent text-white" type="email" placeholder="Enter Your Email">
+        <p id="mEmail" class="alert alert-danger my-1 d-none ">Email not valid *exemple@yyy.zzz</p>
+      </div>
+      <div class="col-md-6">
+        <input id="Phone" class="form-control bg-transparent text-white" type="tel" placeholder="Enter Your Phone">
+        <p id="mPhone" class="alert alert-danger my-1 d-none ">Enter valid Phone Number</p>
+      </div>
+      <div class="col-md-6">
+        <input id="Age" class="form-control bg-transparent text-white" type="number" placeholder="Enter Your Age">
+        <p id="mAge" class="alert alert-danger my-1 d-none ">Enter valid age</p>
+      </div>
+      <div class="col-md-6">
+        <input id="Pass" class="form-control bg-transparent text-white" type="password" placeholder="Enter Your Passowrd">
+        <p id="mpass" class="alert alert-danger my-1 d-none ">Enter valid password *Minimum eight characters, at least one letter and one number:*</p>
+      </div>
+      <div class="col-md-6">
+        <input id="Repas" class="form-control bg-transparent text-white" type="password" placeholder="RePassowrd">
+        <p id="mRe" class="alert alert-danger my-1 d-none ">Enter valid repassword</p>
+      </div>
+      <button disabled id="btn" class="btn btn-outline-danger w-25 m-auto my-3 ">Submit</button>
+    </div>
+  </div>
+</div>
+ِ<!-- ? ================ End ContactUs  ================-->
+
+ِ<!-- ! ================  Start Descrabtion  ================-->
+<div  id="Desc" class="my-5 d-none">
+      <div class="container w-75 m-auto">
+        <div id="rowDesc" class="row">
+       
+        </div>
+      </div>
+</div>
+ِ<!-- ! ================  End Descrabtion  ================-->
+
+ِ<!-- ? ================ Start LoadingScreen  ================-->
+<div class="loading d-none "  >
+    <span class="loader"></span>
+</div>  
+ِ<!-- ? ================ End LoadingScreen  ================-->
+
+    <!-- ! =========== JQuery ========== -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- ! =========== Booatstrab ========== -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- ! =========== js ========== -->
+    <script src="js/index.js"></script>
+  </body>
+</html>
